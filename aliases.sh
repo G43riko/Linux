@@ -17,3 +17,4 @@ alias acs='apt-cache search'
 alias scanPort='nmap -v -sT'
 alias pingg="ping 8.8.8.8"
 alias sem="cd $semester"
+alias extIp="wget http://ipinfo.io/ip -qO -"
