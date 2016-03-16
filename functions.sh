@@ -30,3 +30,44 @@ extract () {
         echo "'$1' is not a valid file!"
     fi
 }
+
+backup() {
+    # Files to backup
+    backup_files="/home/gabriel/.myconf"
+    
+    if [ -z $1 ]; then #TODO a zároven je to súbor
+        backup_files="$1"
+    fi
+    
+    # Backup destination
+    destination="/tmp/backup/"
+    
+    if [ -z $2 ]; then
+        if ![ -d $2 ]; then
+            mkdir -p "$2"
+        fi
+        destination="$1"
+    fi
+    
+    # Archive filename
+    day=$(date +%d.%m.%Y)
+    hostname=$(hostname -s)
+    archive_file="$hostname-$day.tar.gz"
+    
+    # Print start message
+    echo "Backing up $backup_files to $dest/$archive_file"
+    date
+    echo
+    
+    # Backup The Files using tar
+    `tar -czf $destination/$archive_file $backup_files`
+
+    # Print end status message.
+    echo
+    echo "Backup finished"
+    date
+    
+    # Check all backups
+    ls -lh $dest
+
+}
