@@ -19,7 +19,7 @@ alias acs='apt-cache search'
 alias scanPort='nmap -v -sT'
 alias pingg="ping 8.8.8.8"
 alias sem="cd $semester"
-alias pgStart="sudo -u postgres ./usr/lib/postgresql/9.4/bin/postgres -D /home/pi/DB/ > /home/pi/DB/logfile 2>&1 &"
+alias pgStart="sudo -u postgres /usr/lib/postgresql/9.4/bin/postgres -D /home/pi/DB/ > /tmp/pg_logfile 2>&1 &"
 
 ## pass options to free ## 
 alias meminfo='free -m -l -t'
