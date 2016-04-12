@@ -75,3 +75,16 @@ alias listen="lsof -P -i -n"
 #Show the active ports
 alias port='netstat -tulanp'
 
+#MySQL
+alias stopMysql="sudo service mysql stop"
+alias startMysql="sudo service mysql start"
+#PostgreSQL
+alias stopPostgresql="sudo service postgresql stop"
+alias startPostgresql="sudo service postgresql start"
+#transmission-daemon
+alias stopTransmission="sudo service transmission-daemon stop"
+alias startTransmission="sudo service transmission-daemon start"
+#Apache2
+alias stopApache="sudo service apache2 stop"
+alias startApache="sudo service apache2 start"
+
