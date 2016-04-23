@@ -20,7 +20,7 @@ alias sem="cd $semester"
 ##########################
 
 alias h="history"
-alias s="service --staus-all"
+alias s="service --status-all"
 alias j="jobs -a"
 
 alias agr='sudo apt-get --purge remove'
