@@ -28,6 +28,9 @@ alias agi='sudo apt-get install'
 alias agu='sudo apt-get update'
 alias acs='apt-cache search'
 
+#vypíše zariadenia v sieti
+alias showLan='sudo arp -a'
+
 #vypíše pripojené zariadenia v sieti
 alias scanLan='sudo arp-scan -l --interface=wlan0'
 
