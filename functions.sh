@@ -5,6 +5,11 @@ clean_all(){
     sudo find ~ -type f \( -name '*.swp' -o -name '*~' -o -name '*.bak' -o $
 }
 
+#vyhladá rekurzívne v príečinku $1 súbory s výskytom reťazca $2
+search(){
+    grep -rlnw "$1" -e "$2"
+}
+
 update_all(){
     sudo apt-get update
     sudo apt-get upgrade
