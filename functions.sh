@@ -1,3 +1,7 @@
+
+setVolume(){
+   amixer -D pulse sset Master $1%
+}
 clean_all(){
     sudo apt-get autoremove
     sudo apt-get autoclean
