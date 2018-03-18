@@ -49,6 +49,9 @@ alias cmount="mount | column -t"
 #preskenuje a vypíše otvorené porty na danom zariadení
 alias scanPort='nmap -v -sT'
 
+#install .deb package
+alias installDeb='sudo dpkg -i'
+
 #ping google
 alias pingg="ping 8.8.8.8"
 
